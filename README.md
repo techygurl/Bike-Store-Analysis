@@ -68,6 +68,8 @@ To perform the analysis effectively, the following tools were utilized:
 - **SQL** - For querying and extracting data from the database.
 - **Excel** - For data preprocessing, cleaning, and basic analysis.
 - **Tableau** - For visualizing data through interactive dashboards.🔗 Tableau: [[Dashboard](https://public.tableau.com/views/BikeStoreExecutiveDashboard_17429928677810/Dashboard1?:language=en-GB&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link))]
+- 
+![Dashboard 1](https://github.com/user-attachments/assets/d9270183-1c8f-4581-accb-23f43810904c)
 
   ## 🏆 Future Improvements
 - Optimize pricing strategies to maximize profitability.
