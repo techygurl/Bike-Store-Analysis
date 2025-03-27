@@ -36,11 +36,43 @@ The analysis followed a structured approach:
 3. **Data Analysis** - Performed aggregations and calculations to derive insights.
 4. **Data Visualization** - Created dashboards in Tableau for better interpretation of trends.
 
+
+  ## 🛠 Code Features
+### 1️⃣ Extracting Revenue by Year
+```sql
+SELECT YEAR(order_date) AS Year, SUM(total_price) AS Revenue
+FROM sales
+GROUP BY YEAR(order_date)
+ORDER BY Year DESC;
+```
+### 2️⃣ Identifying Top Customers
+```sql
+SELECT customer_name, SUM(total_price) AS Total_Spent
+FROM sales
+GROUP BY customer_name
+ORDER BY Total_Spent DESC
+LIMIT 10;
+```
+### 3️⃣ Sales Performance by Category
+```sql
+SELECT category_name, SUM(total_price) AS Revenue
+FROM sales
+JOIN products ON sales.product_id = products.product_id
+GROUP BY category_name
+ORDER BY Revenue DESC;
+```
+ 
+
 ## 📂 Tools Used
 To perform the analysis effectively, the following tools were utilized:
 - **SQL** - For querying and extracting data from the database.
 - **Excel** - For data preprocessing, cleaning, and basic analysis.
 - **Tableau** - For visualizing data through interactive dashboards.🔗 Tableau: [[Dashboard](https://public.tableau.com/views/BikeStoreExecutiveDashboard_17429928677810/Dashboard1?:language=en-GB&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link))]
+
+  ## 🏆 Future Improvements
+- Optimize pricing strategies to maximize profitability.
+- Identify underperforming sales reps and provide targeted training.
+- Expand product offerings based on sales trends.
 
 ## 🚀 How to Use
 1. Clone this repository.
